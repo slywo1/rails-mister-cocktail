@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Poppins|Titillium+Web|Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,7 +14,33 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="banner">
+      <div class="logo">
+        <h1>WYO'S</h1>
+        <h2>Bar and Kitchen</h2>
+      </div>
+      <div class="nav-small">
+        <p>ABOUT<p>
+      </div>
+      <div class="nav-small">
+        <p>MENUS<p>
+      </div>
+      <div class="nav-big">
+        <p>PRIVATE EVENTS</p>
+      </div>
+      <div class="nav-big">
+        <p>GIFT CARDS</p>
+      </div>
+      <div class="nav-big find">
+        <p>FIND US</p>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
   </body>

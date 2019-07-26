@@ -1,11 +1,19 @@
-<h1 class="text-center"><%= @cocktail.name %></h1>
 <div class="container">
-  <ul>
+
+<h1 class="text-center"><%= @cocktail.name %></h1>
+
+<% a = @cocktail.id.to_s %>
+<% link = "https://res.cloudinary.com/wyos-bar-and-kitchen/image/upload/v1564134502/"+a+".jpg"%>
+<% full_link = link.to_s %>
+
+<%= image_tag(full_link, class: 'image') %>
+
+  <ul class="list">
     <% @cocktail.doses.each do |dose| %>
-      <li>
-        <%= dose.description %> - <%= dose.ingredient.name %> <%= link_to "delete", dose_path(dose), method: "delete", data: {confirm: "Are you sure?"} %>
+      <li><h3 class="items">
+        <a class="changed"><%= dose.description%> - <%= dose.ingredient.name%></a> <%= link_to "delete", dose_path(dose), method: "delete", data: {confirm: "Are you sure?"} %></h3>
       </li>
     <% end %>
   </ul>
 </div>
-<%= link_to "Add a dose!", new_cocktail_dose_path(@cocktail)  %>
+<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary btn-lg"  %>

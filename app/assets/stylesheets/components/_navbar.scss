@@ -1,0 +1,53 @@
+.banner{
+  text-align: center;
+  background-color: #161616;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner .logo{
+  flex: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.banner .logo h1{
+  font-family: 'Graduate', cursive;
+  color: #ED5B01;
+  font-size: 60px;
+  text-align: center;
+  padding-right: 600px;
+}
+
+.banner .logo h2{
+  font-family: 'Yellowtail', cursive;
+  color: #ADADAD;
+  font-size: 53px;
+  text-align: center;
+  padding-right: 600px;
+}
+
+.banner .nav-small{
+  flex: 7%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.banner .nav-big{
+  flex: 12%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+
+.banner p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.find p{
+  border: 20px;
+  border-color: #CDE7B0;
+}

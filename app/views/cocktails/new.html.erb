@@ -1,9 +1,13 @@
-<h1 class="text-center">Add a cocktail</h1>
-<div class="row">
-  <div class="col-8 offset-2">
-    <%= simple_form_for @cocktail do |f| %>
-      <%= f.input  :name, placeholder: "E.g. Mojito", hint: "Bathtub Gin is not a cocktail" %>
-      <%= f.submit "Add a cocktail!", class: "btn btn-primary" %>
-    <% end %>
+<div class="container">
+  <div class="content">
+    <h1 class="text-center">Add a cocktail</h1>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.input  :name, placeholder: "E.g. Mojito", hint: "Bathtub Gin is not a cocktail" %>
+          <%= f.submit "Add a cocktail!", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

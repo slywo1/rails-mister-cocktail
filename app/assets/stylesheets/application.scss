@@ -1,0 +1,94 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-image: url("https://res.cloudinary.com/wyos-bar-and-kitchen/image/upload/v1564128828/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page {
+  padding-top: 80px;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-bottom: 40px;
+}
+
+.content {
+  background-color: rgba(15, 15, 15, 0.9);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container h1{
+  font-weight: bolder;
+  font-size: 45px;
+  font-family: 'Graduate', cursive;
+  color: #ED5B01;
+}
+
+.items {
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+}
+
+.items a {
+  color: #ADADAD;
+}
+
+.items #text {
+  color: #D17A22;
+}
+
+.items :hover{
+  text-decoration: none;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.list .items {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+}
+
+.items a.changed{
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  color: #847732;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+}
