@@ -15,5 +15,19 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import 'bootstrap';
+import "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js";
+
 console.log('Hello World from Webpacker')
+
+// let button = document.querySelector(".bouncy");
+// button.addEventListener("click", (e) => {
+//   let duration = 0.3
+//   let delay = 0.08;
+//   TweenMax.to(e.target, duration, {scaleY: 1.6, ease: Expo.easeOut});
+//   TweenMax.to(e.target, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+//   TweenMax.to(e.target, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+// })
+
+// button.addEventListener('click', function(e) {
+//   console.log("leepal")
+// });

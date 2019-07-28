@@ -9,8 +9,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -25,13 +24,13 @@
       <div class="nav-small">
         <p>MENUS<p>
       </div>
-      <div class="nav-big">
+      <div class="find-us nav-big">
         <p>PRIVATE EVENTS</p>
       </div>
-      <div class="nav-big">
+      <div class=".bouncy nav-big">
         <p>GIFT CARDS</p>
       </div>
-      <div class="nav-big find">
+      <div class="nav-big">
         <p>FIND US</p>
       </div>
     </div>
@@ -41,7 +40,8 @@
         <%= yield %>
       </div>
     </div>
-    <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </body>
 </html>
